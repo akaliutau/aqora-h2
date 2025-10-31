@@ -21,8 +21,10 @@ Download a competition template
 ```bash
 aqora login
 aqora template h2-groundstate-energy
+cd ./h2-groundstate-energy
+aqora install
 ```
-
+	
 NOTE: aqora-cli uses venv for python deps and creates a separate git repository
 
 run from working directory the jupiter notebook server:
@@ -35,12 +37,12 @@ Run all cells, then
 ```bash
 aqora test
 ```
-The last command will convert all code cells into execuable python file. Note: the variable `output` should contain the result of execution, it will be passed to platform
+The last command will convert all code cells into executable python file. Note: the variable `output` should contain the result of execution, it will be passed to the platform.
 
 The command:
 ```bash
-aqora submit
+aqora upload
 ```
-submits the code to the platform
+submits the code to the platform.
 
 
